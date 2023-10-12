@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Colors */
+    --light-gray: #eee !important;
+    --blue-1: #053B50 !important;
+    --blue-2: #176B87 !important;
+    --blue-3: #64CCC5 !important; 
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.detail-kelas-header-title {
+    background-color: var(--light-gray);
+    color: var(--blue-1);
+}
+
+#kelas-level {
+    background-color: var(--blue-2);
+}
