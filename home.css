@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav{
+    font-weight: 600;
+    text-shadow: 1px px 0px rgba(0, 0, 0.2, 0);
+    
+}
+.main-content{
+    margin-bottom: 100px;
+}
+
+nav ul li a{
+    font-weight: 600;
+    font-size: 30px;
+}
+ p.h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.col .parag{
+    margin-top: 20px;
+    line-height: 2em;
+}
+
+
+.kategori p.h2{
+    /* margin-top: 50px; */
+    font-weight: 700;
+}
+.img-pemasaran{
+    padding: 5px;
+background-color: rgb(60, 225, 223);
+
+}
+.img-manajemen{
+    padding: 5px;
+    background-color:rgb(207, 199, 102) ;
+}
+.img-keuangan{
+    padding: 5px;
+    background-color:rgb(240, 227, 44);
+}
+.img-kewirausahaan{
+    padding: 5px;
+    background-color:rgb(236, 100, 76);
+}
+
+.img-soft{
+    padding: 5px;
+    background-color: rgb(250, 92, 250);
+}
+.img-desain{
+    padding: 5px;
+    background-color: rgb(94, 96, 243);
+}
