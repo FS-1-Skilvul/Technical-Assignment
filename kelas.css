@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+p .title-carikelas{
+font-weight: 600;
+}
+
+.card-img-top{
+    /* border-radius: 35px; */
+}
+
+.card{
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
