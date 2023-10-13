@@ -31,7 +31,7 @@ p {
 }
 
 #btn-beli {
-    background-color: var(--blue-2);
+    background-color: var(--blue-1);
     color: var(--white);
     transition: .3s;
 }
@@ -43,7 +43,8 @@ p {
 }
 
 #kelas-level {
-    background-color: var(--blue-2);
+    background-color: var(--blue-3);
+    color: var(--blue-1);
 }
 
 #modul-kelas li span {
