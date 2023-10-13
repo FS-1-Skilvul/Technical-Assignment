@@ -12,3 +12,8 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+.card {
+    background-color: var(--blue-1);
+    color: var(--white);
+}
