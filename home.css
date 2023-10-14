@@ -47,6 +47,12 @@ border: none;
     /* box-shadow: ; */
 }
 
+.card-title{
+    list-style-type: none;
+text-decoration: none;
+}
+
+
 .kategori p.h2{
     /* margin-top: 50px; */
     font-weight: 700;
