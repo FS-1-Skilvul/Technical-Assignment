@@ -1,13 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-p .title-carikelas{
-font-weight: 600;
+p.title-carikelas{
+  font-family: 'Poppins', sans-serif;
+font-weight: 700;
+font-size: 40px;
+color: #176B87;
 }
+
 
 .card-img-top{
-    /* border-radius: 35px; */
+        width: 100%;
+        height: 110px;
+        position: relative;
+        overflow: hidden;
+      
 }
 
+.card-img-top > img {
+    width: 100%;
+    max-width: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+    -moz-transform: translate(-50%, -50%) scale(1.5);
+    -o-transform: translate(-50%, -50%) scale(1.5);
+    transform: translate(-50%, -50%) scale(1.5);
+  } 
 .card{
-
+    /* max-height: 400px; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
