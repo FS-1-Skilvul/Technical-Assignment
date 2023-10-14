@@ -40,3 +40,29 @@ input {
 #btn-beli:hover {
     background-color: var(--light-gray);
 }
+
+.modal-content {
+    background-color: var(--blue-1);
+}
+
+.modal-content button {
+    width: 10rem;
+}
+
+#btn-close-modal {
+    transition: .3s;
+}
+
+#btn-close-modal:hover {
+    background-color: var(--light-gray);
+    color: #575757;
+}
+
+#btn-open-class {
+    transition: .3s;
+}
+
+#btn-open-class:hover {
+    background-color: var(--light-gray);
+    color: #0d6efd;
+}
