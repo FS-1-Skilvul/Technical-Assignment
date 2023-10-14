@@ -17,3 +17,26 @@
     background-color: var(--blue-1);
     color: var(--white);
 }
+
+p {
+    margin-bottom: 0;
+}
+
+.metode {
+    background-color: var(--light-gray);
+}
+
+input {
+    border: 2px solid var(--blue-2);
+}
+
+#btn-beli {
+    color: var(--blue-1);
+    background-color: var(--blue-3);
+    border: 2px solid var(--blue-3);
+    transition: .3s;
+}
+
+#btn-beli:hover {
+    background-color: var(--light-gray);
+}
