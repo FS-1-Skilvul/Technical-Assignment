@@ -13,16 +13,44 @@
 
     <!-- CSS External -->
     <link rel="stylesheet" href="detail-kelas.css">
-
+    <script src="detail-kelas.js" defer></script>
     <title>Sahabat UMKM</title>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl shadow-lg p-3 d-flex justify-content-between sticky-top" id="" style="background-color: #176b87">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/Logo.png" alt="" width="120" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-4" style="font-weight: 400">
+              <li class="nav-item">
+                <a class="nav-link active fw-600" aria-current="page" href="home.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#kategori">Cari Kelas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tentang</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center align-items-center gap-3">
+              <a href="#login" class="text-white text-decoration-none">Masuk</a>
+              <a href="#signup" class="text-black text-decoration-none px-3 py-1 rounded-4" style="background-color: #ffff">Buat Akun</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- End Navbar -->
+
     <main>
         <!-- Kelas Title -->
         <div class="container-fluid">
             <div class="row mb-md-5">
-                <div class="detail-kelas-header-title col-12 px-4 px-md-5 py-2">
-                    <h1 class="">Strategi Pemasaran Digital Terbaik</h1>
+                <div class="detail-kelas-header-title col-12 px-4 px-md-5 py-4">
+                    <h1 id="nama-kelas"></h1>
                 </div>
             </div>
         </div>
@@ -33,10 +61,11 @@
             <div class="container">
                 <div class="row">
                     <div class="detail-kelas-header-image p-0 col-12 col-md-3 mb-4">
-                        <img src="detail-kelas-images/kelas-3.jpg" alt="Strategi Pemasaran Digital Terbaik" class="img-fluid">
+                        <img src="" alt="" class="img-fluid" id="gambar-kelas">
                     </div>
                     <div class="detail-kelas-header-content ps-4 ps-md-5 col-12 col-md-auto">
                         <span id="kelas-level" class="rounded-3 px-5">Pemula</span>
+                        <span id="kelas-price" class="d-block fs-5"></span>
                         <p id="kelas-duration" class="text-black-50 mt-2"><i class="bi bi-clock me-1 text-black"></i>1jam 25mnt</p>
                         <p id="kelas-rating" class="mb-1">
                             <i class="bi bi-star-fill text-warning"></i>
