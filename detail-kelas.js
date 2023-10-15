@@ -21,9 +21,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const namaKelas = document.getElementById("nama-kelas");
         const gambarKelas = document.getElementById("gambar-kelas");
         const hargaKelas = document.getElementById("kelas-price");
+        const deskripsiKelas = document.getElementById("deskripsi-kelas-paragraf");
   
         namaKelas.textContent = dataKelas[indexKelas].coursename;
         gambarKelas.src = dataKelas[indexKelas].image;
         hargaKelas.textContent = dataKelas[indexKelas].price;
+        deskripsiKelas.textContent = dataKelas[indexKelas].description;
     });
 });
