@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <!-- Regis CSS -->
     <link rel="stylesheet" href="regis.css" />
+    <!-- Regis JS -->
+    <script src="login-regis.js" defer></script>
     <title>Regis</title>
   </head>
   <body>
@@ -32,14 +34,15 @@
 
           <!-- Right Side -->
           <div class="right-side col-xl-6">
-            <div class="register-card card border-5 px-5 py-5 col-lg-10 mx-auto">
+            <form onsubmit="register()" class="register-card card border-5 px-5 py-5 col-lg-10 mx-auto">
               <!-- Register 1 -->
               <div class="register-1 flex-grow-1">
                 <h2 class="text-center">Daftar</h2>
+
                 <!-- Nama Lengkap -->
                 <div class="mb-3 input">
-                  <label for="nama-lengkap" class="form-label fw-bold">Nama Lengkap</label>
-                  <input type="texr" class="form-control p-2 border-3" id="nama-lengkap" />
+                  <label for="namaLengkap" class="form-label fw-bold">Nama Lengkap</label>
+                  <input type="text" class="form-control p-2 border-3" id="namaLengkap" />
                 </div>
                 <!-- End of Nama Lengkap -->
                 <!-- Email -->
@@ -63,11 +66,13 @@
                 <button type="submit" class="btn btn-umkm p-3 fs-5 col-12 fw-bold">Daftar</button>
                 <!-- End Of Register Button -->
               </div>
+              <p class="text-center mt-2" id="result"></p>
               <p class="text-center mt-2">
                 Sudah punya akun? <a href="login.html" class="text-decoration-none"><span class="text-primary">Masuk</span></a>
               </p>
-              <!-- End of Register 2 -->
-            </div>
+            </form>
+
+            <!-- End of Register 2 -->
           </div>
           <!-- End Of Right Side -->
         </div>

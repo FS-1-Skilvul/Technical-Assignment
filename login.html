@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <!-- login.css -->
     <link rel="stylesheet" href="login.css" />
+    <!-- Login JS -->
+    <script src="login-regis.js" defer></script>
     <title>Login</title>
   </head>
   <body>
@@ -31,9 +33,9 @@
           <!-- Right Side -->
           <div class="right-side col-xl-6">
             <!-- Login Card -->
-            <div class="login-card card border-5 px-5 py-5 col-lg-10 mx-auto">
-              <!-- Divide Two Parts Of Login -->
 
+            <!-- Divide Two Parts Of Login -->
+            <form onsubmit="loginFunc()" class="login-card card border-5 px-5 py-5 col-lg-10 mx-auto" autocomplete="off">
               <!-- Login-1 -->
               <div class="login-1 flex-grow-1">
                 <h2 class="text-center">Masuk</h2>
@@ -60,12 +62,13 @@
                 <!-- Login Button -->
                 <button type="submit" class="btn btn-umkm p-3 fs-5 col-12 fw-bold">Masuk</button>
                 <!-- End Of login Button -->
+                <p class="text-center mt-2" id="result"></p>
                 <p class="text-center mt-2">
                   Belum punya akun? <a href="regis.html" class="text-decoration-none"><span class="text-primary">Daftar</span></a>
                 </p>
               </div>
               <!-- End Of Login 2 -->
-            </div>
+            </form>
             <!-- End Of Login Card -->
           </div>
           <!-- End Of Right Side -->
