@@ -30,3 +30,10 @@ color: #176B87;
     /* max-height: 400px; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+
+#list-kelas{
+  cursor: pointer;
+  color: rgb(94, 90, 90);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
