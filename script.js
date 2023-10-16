@@ -37,7 +37,7 @@ async function getCourses() {
       <p class="card-text">${course.description}</p>
       <div class="d-flex justify-content-around align-items-start">
               <h2 class="" style="font-size: 18px">${course.price}</h2>
-              <a href="#" class="btn p-1" style="color:#64CCC5">Ikuti Kelas</a>
+              <a href="detail-kelas.html?indexKelas=${index}" class="btn p-1" style="color:#64CCC5">Ikuti Kelas</a>
             </div>
       
     </div>
