@@ -1,20 +1,3 @@
-// function includeNavbar() {
-//     fetch('navbar.html')
-//     .then(response => response.text())
-//     .then(data => {
-//         document.getElementById('navbar-container').innerHTML = data;
-//     const menuList = document.getElementById('menu-list');
-//     const menuIcon = document.getElementById("menu-icon");
-//    menuIcon.addEventListener("click", () => {
-//     menuList.classList.toggle('hidden')
-
-//    })
-
-// });
-// }
-
-// includeNavbar()
-
 async function getCourses() {
   try {
     const apiUrl = await fetch("https://65280fcd931d71583df1d176.mockapi.io/course");
@@ -35,9 +18,9 @@ async function getCourses() {
       <div class="card-text fw-bold
        ">${course.category}</div>
       <p class="card-text">${course.description}</p>
-      <div class="d-flex justify-content-around align-items-start">
+      <div class="d-flex justify-content-around align-items-center">
               <h2 class="" style="font-size: 18px">${course.price}</h2>
-              <a href="#" class="btn p-1" style="color:#64CCC5">Ikuti Kelas</a>
+              <a href="#" class="btn btn-primary " style="color:#ffff">Ikuti Kelas</a>
             </div>
       
     </div>
