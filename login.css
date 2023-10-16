@@ -1,0 +1,27 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.login-card {
+  border-color: #64ccc5;
+  height: 600px;
+}
+
+.btn-umkm {
+  background-color: #053b50;
+  color: white;
+  border-radius: 16px;
+}
+
+.btn-umkm:hover {
+  background-color: #053b50;
+  color: white;
+}
+
+.to-regis {
+  text-decoration: none;
+}
+
+.input input {
+  border-color: #64ccc5;
+}
