@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
   
     getData()
       .then((dataKelas) => {
+        // Simpan data kelas ke dalam local storage
+        localStorage.setItem("dataKelas", JSON.stringify(dataKelas));
+
+        // Ubah tampilan halaman sesuai kelas yang dipilih user
         const namaKelas = document.getElementById("nama-kelas");
         const gambarKelas = document.getElementById("gambar-kelas");
         const hargaKelas = document.getElementById("kelas-price");
@@ -29,3 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
         deskripsiKelas.textContent = dataKelas[indexKelas].description;
     });
 });
+
+// Buka halaman pembayaran ketika button beli kelas diklik
+document.getElementById("btn-beli").addEventListener("click", () => {
+  window.location.href = "pembayaran-kelas.html"
+})
