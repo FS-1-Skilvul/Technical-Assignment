@@ -22,7 +22,7 @@
                 <a class="nav-link  fw-600" onclaria-current="page"  style=""; href="index.html">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="#kategori">Cari Kelas</a>
+                <a class="nav-link"  href="cariKelas.html">Cari Kelas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link"  href="#">Tentang</a>
@@ -53,17 +53,18 @@
             <p class="kategori-h2 h2 text-start" id="kategori-kursus" style="color: #16353f;">Kategori Kursus</p>
 
             <div class="row ">
-             <div class="col-category col-4  col-xs-12">
-              <div class="card mb-3 border-0" style="max-width: 300px;">
+             <div class="col-category col-4  col-xs-12" id="kategori-courses">
+              <div class="card mb-3 border-0 " style="max-width: 300px;">
                 <div class="row g-0">
                   <div class="col-md-4 text-center my-auto ">
                     <img src="img/pemasaran.png" class="img-keuangan img-fluid rounded mx-auto"  style="max-width:60px" alt="...">
                   </div>
                   <div class="col-md-8 shadow-sm">
-                    <div class="card-body" id="pemasaran">
+                    <div class="card-body" id="pemasaran"> <a class="text-decoration-none category-link" data-category="Pemasaran" href="filter.html" >
                       <h5 class="card-title" >Pemasaran</h5>
                     
                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -76,7 +77,7 @@
                     <img src="img/keuangan.png" class="img-pemasaran img-fluid rounded mx-auto"  style="max-width:60px" alt="...">
                   </div>
                   <div class="col-md-8 shadow-sm kategori-box"> 
-                    <div class="card-body" ><a href="cariKelas.html">
+                    <div class="card-body" ><a class="text-decoration-none" href="cariKelas.html">
                       <div class=" h5 card-title text-decoration-none" id="keuangan">Keuangan</div>
                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </a>
@@ -160,7 +161,19 @@
           </section>          
         </div>
 
-        <footer>
+       <footer>
+            <div class="footer-word">
+                <h2>Sahabat UMKM</h2>
+                <p> Kami percaya bahwa pertumbuhan UMKM adalah kunci untuk menggerakkan ekonomi lokal dan menciptakan lapangan kerja.</p>
+            </div>
+
+            <div id="isi-footer">
+                <a href=""><img id="ikon-jam" src="https://cdn-icons-png.flaticon.com/128/1362/1362857.png" alt="" width="30"></a>
+                <a href=""><img id="ikon-jam" src="https://cdn-icons-png.flaticon.com/128/160/160200.png" alt="" width="30"></a>
+                <a href=""><img id="ikon-jam" src="https://cdn-icons-png.flaticon.com/128/665/665228.png" alt="" width="33"></a>
+                <a href=""><img id="ikon-jam" src="https://cdn-icons-png.flaticon.com/128/665/665209.png" alt="" width="32"></a>
+            </div>
+
 
         </footer>
 
