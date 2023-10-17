@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     getData()
       .then((dataKelas) => {
         // Simpan data kelas ke dalam local storage
-        localStorage.setItem("dataKelas", JSON.stringify(dataKelas));
+        localStorage.setItem("dataKelas", JSON.stringify(dataKelas[indexKelas]));
 
         // Ubah tampilan halaman sesuai kelas yang dipilih user
         const namaKelas = document.getElementById("nama-kelas");
