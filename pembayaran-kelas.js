@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let kelasDipilih = JSON.parse(localStorage.getItem("dataKelas"));
+  let kelasDipilih = JSON.parse(sessionStorage.getItem("dataKelas"));
+  console.log(kelasDipilih);
 
   const namaKelas = document.getElementById("nama-kelas");
   const hargaKelas = document.getElementById("harga-kelas");
@@ -29,9 +30,13 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.show();
     }
   });
+
+  document.getElementById("btn-back-modal").addEventListener("click", () => {
+    backToDetailKelas();
+  })
 });
 
-// Cek apakah user sudah memilih metode pembayaran
+// Function untuk cek apakah user sudah memilih metode pembayaran
 function checkPaymentMethod() {
   const radioButtons = document.querySelectorAll(
     ".metode-pembayaran input[type='radio']"
@@ -45,4 +50,8 @@ function checkPaymentMethod() {
   });
 
   return isRadioSelected;
+}
+
+function backToDetailKelas(){
+  window.location.href = `detail-kelas.html?indexKelas=${localStorage.getItem("indexKelas")}`
 }
