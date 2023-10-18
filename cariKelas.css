@@ -1,12 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Colors */
+  --black: #000000 !important;
+  --white: #ffffff !important;
+  --light-gray: #eee !important;
+  --blue-1: #053B50 !important;
+  --blue-2: #176B87 !important;
+  --blue-3: #64CCC5 !important; 
+}
+
+
 p.title-carikelas{
   font-family: 'Poppins', sans-serif;
 font-weight: 700;
 font-size: 40px;
-color: #176B87;
+color: var(--blue-2);
 }
-
-
+.nav-item a{
+  display: flex;
+  gap: 15px;
+  text-shadow: solid 1px black;
+  font-weight: 500;
+  font-size: 17   px;
+}
+li a.active {
+  color: var(--black);
+}
 .card-img-top{
         width: 100%;
         height: 110px;
@@ -29,4 +49,63 @@ color: #176B87;
 .card{
     /* max-height: 400px; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#list-kelas{
+  cursor: pointer;
+  color: rgb(94, 90, 90);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+footer{
+    
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: #0a495f;
+}
+
+#isi-footer{
+display: flex;
+justify-content: space-around;
+/* margin: 100px; */
+
+/* width: 100%; */
+
+}
+.footer-word{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+}
+.footer-word h2{
+    color: #b0e1f1;
+    font-weight: 600;
+     font-family: 'Montserrat', sans-serif;
+     /* font-family: 'Open Sans', sans-serif; */
+     
+
+    margin-bottom: 20px;
+}
+.footer-word p{
+    color: #a2a2a2;
+    width: 500px;
+    text-align: center;
+    line-height: 2em;
+    font-size: 13px;
+}
+#isi-footer a{
+    margin: 10px;
+}
+
+#populer-class{
+  font-weight: 700;
+  color: var(--blue-1);
 }
