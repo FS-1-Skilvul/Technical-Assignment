@@ -33,10 +33,9 @@ function loginFunc(e) {
   let data = JSON.parse(user);
   console.log(data);
 
-  console.log(data.email);
   console.log(data.password);
 
-  if (user == null) {
+  if (email == "" && password == "") {
     result.innerHTML = "Masukan Email dan Password dengan Benar!";
   } else if (email == data.email && password == data.password) {
     alert("BERHASIL LOGIN!");
