@@ -14,7 +14,8 @@ function register(e) {
   let json = JSON.stringify(user);
   localStorage.setItem("email", json);
 
-  result.innerHTML = `Nama Akun Dengan Nama Lengkap : ${namaLengkap} Berhasil dibuat!`;
+  alert("AKUN BERHASIL DIBUAT!");
+  document.location.href = "login.html";
 }
 
 function loginFunc(e) {
@@ -32,13 +33,13 @@ function loginFunc(e) {
   let data = JSON.parse(user);
   console.log(data);
 
-  console.log(data.email);
   console.log(data.password);
 
-  if (user == null) {
+  if (email == "" && password == "") {
     result.innerHTML = "Masukan Email dan Password dengan Benar!";
   } else if (email == data.email && password == data.password) {
-    result.innerHTML = "BERHASIL LOGIN!";
+    alert("BERHASIL LOGIN!");
+    document.location.href = "index.html";
   } else {
     result.innerHTML = "Password Salah!";
   }
