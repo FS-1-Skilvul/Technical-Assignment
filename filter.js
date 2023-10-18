@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const judul = document.createElement("h1")
         // judul.textContent = ${course.coursename}
 
-    filteredCards.forEach((course) => {
+    filteredCards.forEach((course,index) => {
       `<h1 class="">${course.coursename}</h1>`
       let card = `
       

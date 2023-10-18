@@ -31,10 +31,7 @@ function loginFunc(e) {
   let user = localStorage.getItem("email");
   console.log(user);
   let data = JSON.parse(user);
-  // console.log(data);
-
-  // console.log(data.email);
-  // console.log(data.password);
+ 
 
   if (user == null) {
     result.innerHTML = "Masukan Email dan Password dengan Benar!";

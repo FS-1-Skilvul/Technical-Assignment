@@ -19,7 +19,7 @@ async function getCourses() {
     let item = await apiUrl.json();
     const limit = 12;
     const sliceData = item.slice(0, limit);
-    sliceData.forEach((course) => {
+    sliceData.forEach((course,index) => {
       let listCourse = document.getElementById("apiData");
       let card = `
    
@@ -71,7 +71,7 @@ async function filterAndDisplayCards() {
     const cardsContainer = document.getElementById("apiData");
     cardsContainer.innerHTML = "";
 
-    filteredCards.forEach((course) => {
+    filteredCards.forEach((course,index) => {
       const card = document.createElement("div");
       // card.className = "col-category col-6";
       // card.style.maxWidth = "17rem";
