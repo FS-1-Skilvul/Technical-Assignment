@@ -151,3 +151,68 @@ footer {
 #isi-footer a {
   margin: 10px;
 }
+
+
+/* layanan */
+
+#layanan{
+    margin-top: 50px;
+    /* display: flex;
+    flex-direction: column;
+    margin: 25px; */
+}
+
+#layanan p.h2{
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    
+}
+.head-layanan{
+    align-items: center;
+    display: flex;
+}
+#title-fitur{
+    color: #16353f;
+    /* font-size: 30px; */
+}
+.main-layanan{
+    margin-bottom: 70px;
+    display: flex;
+    
+}
+
+.isiwoi{
+    justify-content: space-around;
+    margin: 30px 10px;
+    /* gap: 30px; */
+    display: flex;
+    flex-direction: column;
+}
+#img-fitur{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 270px;
+}
+.isi-fitur{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.isi-fitur h2{
+    color: #176B87;
+}
+.isi-fitur p{
+    color: #63757a;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7em;
+}
+.img-isi-fitur{
+    padding: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #a9e7fc;
+}
