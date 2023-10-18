@@ -14,8 +14,9 @@ function register(e) {
   let json = JSON.stringify(user);
   localStorage.setItem("email", json);
 
-  result.innerHTML = `Nama Akun Dengan Nama Lengkap : ${namaLengkap} Berhasil dibuat!`;
+  // result.innerHTML = `Nama Akun Dengan Nama Lengkap : ${namaLengkap} Berhasil dibuat!`;
 }
+
 
 function loginFunc(e) {
   event.preventDefault();
@@ -30,10 +31,10 @@ function loginFunc(e) {
   let user = localStorage.getItem("email");
   console.log(user);
   let data = JSON.parse(user);
-  console.log(data);
+  // console.log(data);
 
-  console.log(data.email);
-  console.log(data.password);
+  // console.log(data.email);
+  // console.log(data.password);
 
   if (user == null) {
     result.innerHTML = "Masukan Email dan Password dengan Benar!";

@@ -88,7 +88,7 @@ async function filterAndDisplayCards() {
       <p class="card-text">${course.description}</p>
       <div class="d-flex justify-content-around align-items-center">
   <h2 class="" style="font-size: 18px">${course.price}</h2>
-<a href="#" class="btn btn-primary " style="color:#ffff">Ikuti Kelas</a>
+<a href="detail-kelas.html?indexKelas=${index}" class="btn btn-primary " style="color:#ffff">Ikuti Kelas</a>
             </div>
     </div>
     </div>
@@ -101,4 +101,3 @@ async function filterAndDisplayCards() {
 }
 
 document.getElementById("category-filter").addEventListener("change", filterAndDisplayCards);
-
