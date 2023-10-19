@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       hargaKelas.textContent = data1[indexKelas].price;
       deskripsiKelas.textContent = data1[indexKelas].description;
 
-      const dataSinkron = data2.find((item) => item.idKelas == data1[indexKelas].id); // get data2 (pengajar dan modul) yang sesuai dengan data1 (kelas)
+      const dataSinkron = data2.find((item) => item.idKelas == data1[indexKelas].id); // get data2 (pengajar dan modul) yang sesuai dengan data1 (kelas) yang dipilih user
 
       // Ubah data modul
       dataSinkron.modul.map((mod, index) => {
@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
       })
 
       // Ubah data pengajar
-      console.log(dataSinkron);
       namaPengajar.textContent = dataSinkron.namaPengajar;
       gambarPengajar.src = dataSinkron.imgPengajar;
       titlePengajar.textContent = dataSinkron.title;
