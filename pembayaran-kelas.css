@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Colors */
+    --white: #ffffff !important;
+    --light-gray: #eee !important;
+    --blue-1: #053B50 !important;
+    --blue-2: #176B87 !important;
+    --blue-3: #64CCC5 !important; 
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    background-color: var(--blue-1);
+    color: var(--white);
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.metode {
+    background-color: var(--light-gray);
+}
+
+input {
+    border: 2px solid var(--blue-2);
+}
+
+#btn-beli {
+    color: var(--blue-1);
+    background-color: var(--blue-3);
+    border: 2px solid var(--blue-3);
+    transition: .3s;
+}
+
+#btn-beli:hover {
+    background-color: var(--light-gray);
+}
+
+.modal-content {
+    background-color: var(--blue-1);
+}
+
+.modal-content button {
+    width: 10rem;
+}
+
+#btn-close-modal {
+    transition: .3s;
+}
+
+#btn-close-modal:hover {
+    background-color: var(--light-gray);
+    color: #575757;
+}
+
+#btn-open-class {
+    transition: .3s;
+}
+
+#btn-open-class:hover {
+    background-color: var(--light-gray);
+    color: #0d6efd;
+}
