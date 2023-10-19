@@ -1,93 +1,221 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-body{
-    font-family: 'Poppins', sans-serif;
-
+:root {
+  /* Colors */
+  --white: #ffffff !important;
+  --light-gray: #eee !important;
+  --blue-1: #053b50 !important;
+  --blue-2: #176b87 !important;
+  --blue-3: #64ccc5 !important;
 }
 
-nav{
-    font-weight: 600;
-    text-shadow: 1px px 0px rgba(0, 0, 0.2, 0);
-    
-}
-.main-content{
-    /* margin-top: 200px; */
-    margin-bottom: 170px;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-.nav-item a{
-    display: flex;
-    gap: 15px;
-    text-shadow: solid 1px black;
+nav {
+  font-weight: 600;
+  text-shadow: 1px px 0px rgba(0, 0, 0.2, 0);
+}
+.main-content {
+  /* margin-top: 200px; */
+  margin-bottom: 170px;
+}
+
+.nav-item a {
+    text-decoration: none;
+  display: flex;
+  gap: 15px;
+  text-shadow: solid 1px black;
+  font-weight: 400;
+  font-size: 18px;
+}
+p.h1 {
+  margin-top: 50px;
+  font-size: 3em;
+  line-height: 1.5em;
+  font-weight: 700;
+}
+
+#parag {
+  color: #16353f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-top: 25px;
+  line-height: 1.5em;
+}
+.col-category {
+  cursor: pointer;
+  border: none;
+}
+.col-category:hover {
+  transform: translateY(-15px);
+  /* cursor: pointer; */
+  /* box-shadow: 0 0 3px rgb(0, 0, 0, 0.4); */
+  transition: transform 0.3s ease-in, box-shadow 0.2s ease-in;
+  /* box-shadow: ; */
+}
+
+.card-title {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.kategori p.h2 {
+  font-weight: 700;
+}
+.layanan p.h2 {
+  font-weight: 700;
+}
+
+
+#kategori .card-title{
+    font-size: 18px;
     font-weight: 500;
-    font-size: 17   px;
 }
- p.h1{
-    margin-top: 50px;
-    font-size: 3.5em;
-    line-height: 1.5em;
-    font-weight: 700;
+#kategori-kursus {
+  margin-bottom: 60px;
 }
-
-#parag{
-    color: #16353f;
-    font-family:'Poppins', sans-serif;
-    font-weight: 500;
-    margin-top: 25px;
-    line-height: 1.5em;
-}
-.col-category{
-    cursor: pointer;
-border: none;
-}
-.col-category:hover{transform: translateY(-15px) ;
-    /* cursor: pointer; */
-    /* box-shadow: 0 0 3px rgb(0, 0, 0, 0.4); */
-    transition: transform 0.3s ease-in, box-shadow 0.2s ease-in;
-    /* box-shadow: ; */
-}
-
-.card-title{
-    list-style-type: none;
-text-decoration: none;
-}
-
-
-.kategori p.h2{
-    /* margin-top: 50px; */
-    font-weight: 700;
-}
-#kategori-kursus{
-    margin-bottom: 50px;
-}
-.img-pemasaran{
-    padding: 5px;
-background-color: rgb(60, 225, 223);
-
+.img-pemasaran {
+  padding: 5px;
+  background-color: rgb(60, 225, 223);
 }
 /* 
 #pemasaran .card{
     text-decoration: none;
     list-style-type: none;
 } */
-.img-manajemen{
-    padding: 5px;
-    background-color:rgb(207, 199, 102) ;
+.img-manajemen {
+  padding: 5px;
+  background-color: rgb(207, 199, 102);
 }
-.img-keuangan{
-    padding: 5px;
-    background-color:rgb(240, 227, 44);
+.img-keuangan {
+  padding: 5px;
+  background-color: rgb(240, 227, 44);
 }
-.img-kewirausahaan{
-    padding: 5px;
-    background-color:rgb(236, 100, 76);
+.img-kewirausahaan {
+  padding: 5px;
+  background-color: rgb(236, 100, 76);
 }
 
-.img-soft{
-    padding: 5px;
-    background-color: rgb(250, 92, 250);
+.img-soft {
+  padding: 5px;
+  background-color: rgb(250, 92, 250);
 }
-.img-desain{
-    padding: 5px;
-    background-color: rgb(94, 96, 243);
+.img-desain {
+  padding: 5px;
+  background-color: rgb(94, 96, 243);
+}
+
+li a.active {
+  color: #000;
+}
+
+footer {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  background-color: #0a495f;
+}
+
+#isi-footer {
+  display: flex;
+  justify-content: space-around;
+  /* margin: 100px; */
+
+  /* width: 100%; */
+}
+.footer-word {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.footer-word h2 {
+  color: #b0e1f1;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+
+  margin-bottom: 20px;
+}
+.footer-word p {
+  color: #a2a2a2;
+  width: 500px;
+  text-align: center;
+  line-height: 2em;
+  font-size: 13px;
+}
+#isi-footer a {
+  margin: 10px;
+}
+
+
+/* layanan */
+
+#layanan{
+    margin-top: 50px;
+    /* display: flex;
+    flex-direction: column;
+    margin: 25px; */
+}
+
+/* #layanan-kursus {
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+     */
+
+.head-layanan{
+    align-items: center;
+    display: flex;
+}
+#title-fitur{
+    color: #16353f;
+    /* font-size: 30px; */
+}
+.main-layanan{
+    margin-bottom: 70px;
+    display: flex;
+    
+}
+
+.main-fitur{
+    justify-content: space-around;
+    margin: 30px 10px;
+    /* gap: 30px; */
+    display: flex;
+    flex-direction: column;
+}
+#img-fitur{
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 270px;
+}
+.isi-fitur{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.isi-fitur h2{
+    color: #176B87;
+}
+.isi-fitur p{
+    color: #63757a;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7em;
+}
+.img-isi-fitur{
+    padding: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #a9e7fc;
 }

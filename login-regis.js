@@ -1,45 +1,32 @@
 function register(e) {
   event.preventDefault();
 
-  let namaLengkap = document.getElementById("namaLengkap").value;
-  let email = document.getElementById("email").value;
-  let password = document.getElementById("password").value;
+  const namaLengkap = document.getElementById("namaLengkap").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const result = document.getElementById("result");
 
-  let user = {
-    namaLengkap: namaLengkap,
-    email: email,
-    password: password,
-  };
-
-  let json = JSON.stringify(user);
-  localStorage.setItem("email", json);
-
-  result.innerHTML = `Nama Akun Dengan Nama Lengkap : ${namaLengkap} Berhasil dibuat!`;
+  if (localStorage.getItem(email)) {
+    result.innerHTML = "Akun dengan email tersebut sudah ada!";
+  } else {
+    localStorage.setItem(email, JSON.stringify({ namaLengkap, password }));
+    alert("BERHASIL REGIS!");
+    document.location.href = "login.html";
+  }
 }
 
 function loginFunc(e) {
   event.preventDefault();
 
-  let email = document.getElementById("email").value;
-  console.log(email);
-  let password = document.getElementById("password").value;
-  console.log(password);
-  let result = document.getElementById("result");
-  console.log(result);
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const result = document.getElementById("result");
 
-  let user = localStorage.getItem("email");
-  console.log(user);
-  let data = JSON.parse(user);
-  console.log(data);
-
-  console.log(data.email);
-  console.log(data.password);
-
-  if (user == null) {
-    result.innerHTML = "Masukan Email dan Password dengan Benar!";
-  } else if (email == data.email && password == data.password) {
-    result.innerHTML = "BERHASIL LOGIN!";
+  const user = JSON.parse(localStorage.getItem(email));
+  if (user && user.password === password) {
+    alert("BERHASIL LOGIN!");
+    document.location.href = "index.html";
   } else {
-    result.innerHTML = "Password Salah!";
+    result.innerHTML = "Login gagal. Pastikan email dan kata sandi benar!";
   }
 }
