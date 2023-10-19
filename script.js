@@ -19,7 +19,7 @@ async function getCourses() {
     let item = await apiUrl.json();
     const limit = 16;
     const sliceData = item.slice(0, limit);
-    sliceData.forEach((course,index) => {
+    sliceData.forEach((course) => {
       let listCourse = document.getElementById("apiData");
       let card = `
    
@@ -34,7 +34,7 @@ async function getCourses() {
       <div class="d-flex justify-content-around align-items-center">
               <h2 class="" style="font-size: 18px">${course.price}</h2>
 
-              <a href="detail-kelas.html?indexKelas=${index}" class="btn btn-primary " style="color:#ffff">Ikuti Kelas</a>
+              <a href="detail-kelas.html?indexKelas=${parseInt(course.id) - 1}" class="btn btn-primary " style="color:#ffff">Ikuti Kelas</a>
 
             </div>
     </div>
@@ -71,7 +71,7 @@ async function filterAndDisplayCards() {
     const cardsContainer = document.getElementById("apiData");
     cardsContainer.innerHTML = "";
 
-    filteredCards.forEach((course,index) => {
+    filteredCards.forEach((course) => {
       const card = document.createElement("div");
       // card.className = "col-category col-6";
       // card.style.maxWidth = "17rem";
@@ -88,7 +88,7 @@ async function filterAndDisplayCards() {
       <p class="card-text">${course.description}</p>
       <div class="d-flex justify-content-around align-items-center">
   <h2 class="" style="font-size: 18px">${course.price}</h2>
-<a href="detail-kelas.html?indexKelas=${index}" class="btn btn-primary " style="color:#ffff">Ikuti Kelas</a>
+<a href="detail-kelas.html?indexKelas=${parseInt(course.id) - 1}" class="btn btn-primary " style="color:#ffff">Ikuti Kelas</a>
             </div>
     </div>
     </div>

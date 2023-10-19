@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const judul = document.createElement("h1")
         // judul.textContent = ${course.coursename}
 
-    filteredCards.forEach((course,index) => {
+    filteredCards.forEach((course) => {
       `<h1 class="">${course.coursename}</h1>`
       let card = `
       
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <p class="card-text">${course.description}</p>
                                 <div class="d-flex justify-content-around align-items-center">
                                     <h2 class="" style="font-size: 18px">${course.price}</h2>
-                                    <a href="detail-kelas.html?indexKelas=${index}" class="btn btn-primary" style="color:#ffff">Ikuti Kelas</a>
+                                    <a href="detail-kelas.html?indexKelas=${parseInt(course.id) - 1}" class="btn btn-primary" style="color:#ffff">Ikuti Kelas</a>
                                 </div>
                             </div>
                         </div>
