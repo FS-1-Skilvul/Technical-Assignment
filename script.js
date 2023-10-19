@@ -17,7 +17,7 @@ async function getCourses() {
     const apiUrl = await fetch("https://65280fcd931d71583df1d176.mockapi.io/course");
 
     let item = await apiUrl.json();
-    const limit = 12;
+    const limit = 16;
     const sliceData = item.slice(0, limit);
     sliceData.forEach((course,index) => {
       let listCourse = document.getElementById("apiData");

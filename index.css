@@ -62,9 +62,12 @@ p.h1 {
 }
 
 .kategori p.h2 {
-  /* margin-top: 50px; */
   font-weight: 700;
 }
+.layanan p.h2 {
+  font-weight: 700;
+}
+
 
 #kategori .card-title{
     font-size: 18px;
@@ -162,11 +165,11 @@ footer {
     margin: 25px; */
 }
 
-#layanan p.h2{
+/* #layanan-kursus {
     font-weight: 700;
     font-family: "Poppins", sans-serif;
-    
-}
+     */
+
 .head-layanan{
     align-items: center;
     display: flex;
@@ -181,7 +184,7 @@ footer {
     
 }
 
-.isiwoi{
+.main-fitur{
     justify-content: space-around;
     margin: 30px 10px;
     /* gap: 30px; */
