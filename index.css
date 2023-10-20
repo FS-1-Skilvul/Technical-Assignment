@@ -66,8 +66,8 @@ p.h1 {
 .kategori p.h2 {
   font-weight: 700;
 }
-.layanan p.h2 {
-  font-weight: 600;
+.layanan p.kategori-h2 {
+  font-weight: 700;
 }
 
 
