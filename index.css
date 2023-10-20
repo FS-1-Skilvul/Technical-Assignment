@@ -8,7 +8,9 @@
   --blue-2: #176b87 !important;
   --blue-3: #64ccc5 !important;
 }
-
+* {
+    font-family: 'Poppins', sans-serif;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -65,7 +67,7 @@ p.h1 {
   font-weight: 700;
 }
 .layanan p.h2 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 
@@ -74,7 +76,7 @@ p.h1 {
     font-weight: 500;
 }
 #kategori-kursus {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 .img-pemasaran {
   padding: 5px;
@@ -159,16 +161,11 @@ footer {
 /* layanan */
 
 #layanan{
-    margin-top: 50px;
+    margin: 80px 0 50px 0;
     /* display: flex;
     flex-direction: column;
     margin: 25px; */
 }
-
-/* #layanan-kursus {
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-     */
 
 .head-layanan{
     align-items: center;
@@ -181,6 +178,7 @@ footer {
 .main-layanan{
     margin-bottom: 70px;
     display: flex;
+    gap: 20px;
     
 }
 

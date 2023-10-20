@@ -62,9 +62,7 @@ async function filterAndDisplayCards() {
     const categorySelect = document.getElementById("category-filter");
     const selectedCategory = categorySelect.value;
 
-    // Filter cards based on the selected category from the dropdown
-    // const filteredCards = selectedCategory === "all" ? data : data.filter((course) => course.category.trim() === selectedCategory.trim());
-
+    
     const filteredCards = selectedCategory === "all" ? data : data.filter((course) => course.category === selectedCategory);
     console.log(filteredCards);
     // Display filtered cards in the container
@@ -73,9 +71,6 @@ async function filterAndDisplayCards() {
 
     filteredCards.forEach((course) => {
       const card = document.createElement("div");
-      // card.className = "col-category col-6";
-      // card.style.maxWidth = "17rem";
-
       card.innerHTML = `  
    
        <div class="col mx-auto" style=" max-width: 17rem">
