@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl shadow-lg p-3 d-flex justify-content-between sticky-top" style="background-color: #176b87">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/Logo.png" alt="" width="120" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-4" style="font-weight: 400">
+            <li class="nav-item">
+              <a class="nav-link fw-600" aria-current="page"  ; href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cariKelas.html">Cari Kelas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#layanan">Tentang</a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center align-items-center gap-3">
+            <a href="login.html" class="text-white text-decoration-none">Masuk</a>
+            <a href="regis.html" class="text-black text-decoration-none px-3 py-1 rounded-4" style="background-color: #ffff">Buat Akun</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container main">
+      <div class="main-content row d-flex justify-content-center align-items-center mt-100">
+        <div class="col-xs-12 col-md-6 mb-6">
+          <p class="h1 lh-md" style="color: #176b87">Panduan Bisnis Terbaik Bagi UMKM Anda</p>
+          <p class="mt-20 lh-lg" id="parag">
+            Kami hadir untuk mendukung para pemilik UMKM dalam mengatasi tantangan dan mencapai tujuan bisnis mereka. Temukan sumber daya dan panduan yang diperlukan untuk mengoptimalkan potensi bisnis Anda
+          </p>
+          <button type="button" class="btn mt-3"><a href="login.html" class="p-3  rounded text-decoration-none" style="color: #ffff; background-color: #176b87; font-weight: 600; font-size: 18px;">Mulai Sekarang</a></button>
+        </div>
+        <div class="col col-md-6">
+          <img src="img/main-img.jpg" class="img-fluid img" alt="f" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="kategori my-5" id="kategori">
+        <p class="kategori-h2 h2 text-start" id="kategori-kursus" style="color: #053b50">Eksplor Kursus Kamu Disini!</p>
+
+        <div class="row">
+          <div class="col-category col-4 col-xs-12" id="kategori-courses">
+            <div class="card mb-3 border-0" style="max-width: 300px">
+              <div class="row g-0">
+                <div class="col-md-4 text-center my-auto">
+                  <img src="img/pemasaran.png" class="img-pemasaran img-fluid rounded mx-auto" style="max-width: 60px" alt="..." />
+                </div>
+                <div class="col-md-8 shadow-sm">
+                  <div class="card-body" id="pemasaran">
+                    <a class="text-decoration-none category-link" href="filter.html?category=Pemasaran">
+                      <h5 class="card-title">Pemasaran</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-category col-4 col-xs-12">
+            <div class="card mb-3 border-0" style="max-width: 300px">
+              <div class="row g-0">
+                <div class="col-md-4 text-center my-auto">
+                  <img src="img/keuangan.png" class="img-pemasaran img-fluid rounded mx-auto" style="max-width: 60px" alt="..." />
+                </div>
+                <div class="col-md-8 shadow-sm kategori-box">
+                  <div class="card-body">
+                    <a class="text-decoration-none" href="filter.html?category=Keuangan">
+                      <div class="h5 card-title text-decoration-none" id="keuangan">Keuangan</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-category col-4 col-xs-12">
+            <div class="card mb-3 border-0" style="max-width: 300px">
+              <div class="row g-0">
+                <div class="col-md-4 text-center my-auto">
+                  <img src="img/manajemen.png" class="img-manajemen mg-fluid rounded" style="max-width: 60px" alt="..." />
+                </div>
+                <div class="col-md-8 shadow-sm">
+                  <div class="card-body">
+                    <a class="text-decoration-none" href="filter.html?category=Keuangan">
+                      <h5 class="card-title">Manajemen Bisnis</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-category col-4 col-xs-12">
+            <div class="card mb-3 border-0" style="max-width: 300px">
+              <div class="row g-0">
+                <div class="col-md-4 text-center my-auto">
+                  <img src="img/kewirausahaan.png" class="img-kewirausahaan img-fluid rounded" style="max-width: 60px" alt="..." />
+                </div>
+                <div class="col-md-8 shadow-sm">
+                  <div class="card-body" id="kewirausahaan">
+                    <a class="text-decoration-none" href="filter.html?category=Kewirausahaan">
+                      <h5 class="card-title">Kewirausahaan</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-category col-4 col-xs-12">
+            <div class="card mb-3 border-0" style="max-width: 300px">
+              <div class="row g-0">
+                <div class="col-md-4 text-center my-auto">
+                  <img src="img/desain.png" class="img-desain img-fluid rounded" style="max-width: 60px" alt="..." />
+                </div>
+                <div class="col-md-8 shadow-sm">
+                  <div class="card-body" id="desain">
+                    <a class="text-decoration-none" href="filter.html?category=Desain Produk">
+                      <h5 class="card-title">Desain Produk</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-category col-4 col-xs-12">
+            <div class="card mb-3 border-0" style="max-width: 300px">
+              <div class="row g-0">
+                <div class="col-md-4 text-center my-auto">
+                  <img src="img/softskil.png" class="img-soft img-fluid rounded" style="max-width: 60px" alt="..." />
+                </div>
+                <div class="col-md-8 shadow-sm">
+                  <div class="card-body" id="pengembangan">
+                    <a class="text-decoration-none" href="filter.html?category=Soft Skills">
+                      <h5 class="card-title">Pengembangan diri</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <div class="container mt-10">
+      <section class="layanan " id="layanan">
+         <p class="kategori-h2 h2 text-start" id="" style="color: #053b50">Mengapa Sahabat UMKM?</p>
+        <div class="row d-flex align-items-center">
+          <!-- <div class="col col-md-6 col-12 mt-4 ml-0 mb-4 ">
+            <img src="https://img.freepik.com/free-photo/photo-lady-great-mood-telling-employees-via-video-link-about-improving-economic-condition-business_197531-25689.jpg?w=360&t=st=1695048004~exp=1695048604~hmac=8fda71dc8bcabdb8973e3cc844075a3a0e965bc900096f256f73df27ed9e995c" alt="" alt="">
+          </div> -->
+          <div class="col  col-12">
+            <div class="main-fitur">
+                <div class="isi-fitur">
+                    <div class="img-isi-fitur">
+                        <a href=""><img src="https://cdn-icons-png.flaticon.com/128/3749/3749781.png" width="40"></a>
+                     </div>
+                     <div class="desc-fitur">
+                         <p class="h2 fs-3" style="color: #176b87;">Akses ke Pelatihan Berkualitas</p>
+                         <p> Sahabat UMKM memberi Anda kesempatan untuk terus meningkatkan keterampilan, pengetahuan, dan kemampuan dalam mengelola bisnis Anda, sehingga dapat bersaing lebih baik di pasar. </div>
+                 </div>
+                 <div class="isi-fitur">
+                     <div class="img-isi-fitur">
+                         <a href=""><img src="https://cdn-icons-png.flaticon.com/128/1924/1924532.png" alt="support" width="40"></a>
+                     </div>
+                     <div class="desc-fitur">
+                     <p class="h2 fs-3" style="color: #176b87;">Dukungan Terhadap UMKM Lokal </p>
+                     <p> Dengan memilih kami, Anda turut berperan dalam pertumbuhan ekonomi lokal, membantu UMKM berkembang, dan menciptakan lapangan pekerjaan di komunitas setempat.</p>
+                 </div>
+             </div>
+                 <div class="isi-fitur">
+                     <div class="img-isi-fitur">
+                         <a href=""><img src="https://cdn-icons-png.flaticon.com/128/3820/3820102.png" alt="support" width="40"></a>
+                     </div>
+                     <div class="desc-fitur">
+                     <p class="h2 fs-3" style="color: #176b87;">Komunitas dan Jaringan</p>
+                     <p> Dengan memilih kami, Anda dapat bergabung dengan komunitas ini memungkinkan Anda untuk berbagi pengalaman, bertukar ide, dan membangun jaringan yang berharga..</p>
+                 </div>
+             </div>
+
+               </div>
+          </div>
+        </div>
+
+</section>
+</div>
+    <footer>
+      <div class="footer-word">
+        <h2>Sahabat UMKM</h2>
+        <p>Kami percaya bahwa pertumbuhan UMKM adalah kunci untuk menggerakkan ekonomi lokal dan menciptakan lapangan kerja.</p>
+      </div>
+
+      <div id="isi-footer">
+        <a href=""><img id="ikon-jam" src="https://cdn-icons-png.flaticon.com/128/1362/1362857.png" alt="" width="30" /></a>
+        <a href=""><img id="ikon-jam" src="https://cdn-icons-png.flaticon.com/128/160/160200.png" alt="" width="30" /></a>
+        <a href=""><img id="ikon-jam" src="https://cdn-icons-png.flaticon.com/128/665/665228.png" alt="" width="33" /></a>
+        <a href=""><img id="ikon-jam" src="https://cdn-icons-png.flaticon.com/128/665/665209.png" alt="" width="32" /></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
